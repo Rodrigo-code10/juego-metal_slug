@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metal-Slug</title>
+  <style>
+    body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: black;
+        padding-top: 50px;
+    }
+
+    .frame1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 60px;
+    }
+
+    .boton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 02px;
+    }
+
+    .encabezado{
+        display:flex;
+        flex-direction: column;
+        align-content: stretch;
+        margin: 50px;
+    }
+
+    .titulo{
+        color: #ee8515; 
+        text-shadow:
+            0 0 10px #e0831f, 
+            0 0 20px #ee8515, 
+            0 0 30px #ee8515,
+            0 0 40px #ee8515; 
+        font-size: 80px;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+    }
+
+    .Subtitulo{
+        color:grey;
+        font-size: 20px;
+        margin: 0px;
+    }
+ 
+    button:hover{
+        background-color:#ee8515;
+        box-shadow: 
+            0 0 10px #e0831f,
+            0 0 20px #ee8515, 
+            0 0 30px #ee8515, 
+            0 0 35px #d57a19; 
+    }
+
+    button{
+        margin: 20px;
+        width: 300px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 25px;
+        background-color: grey;         
+        color: white;
+        border: none;  
+        box-shadow: 
+            0 0 10px #555,
+            0 0 20px #666;
+    }
+    .boton{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <h1 class="titulo">METAL SLUG</h1>
+        <h6 class="Subtitulo">Arcade</h6>
+    </div>
+    
+    <div class="frame1">
+        <div class="MarcoRossi">
+            <img src="src/MarcoAprobando.gif" alt="Imagen 1" width="300" height="300">
+        </div>
+
+        <div class="boton">
+            <button id="Continuar" onclick="window.location.href='index.html'">Jugar</button>
+            <button id="Record"  onclick="mostrarRanking()">Mejores Record</button>
+        </div>
+
+        <div class="Soldado">
+            <img src="src/SoldadoRiendo.gif" alt="Imagen 2" width="300" height="300">
+        </div>
+    </div>
+    
+     <script src="js/metal.js"></script>
+ 
+</body>
+</html>

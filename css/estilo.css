@@ -1,0 +1,73 @@
+:root {
+  --bg-init: #043326;
+  --bg-end: #094433;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-init) 0%, var(--bg-end)  100%);
+}
+
+.area {
+  width: 1700px;   
+  height: 600px;   
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.7);
+  border-radius: 12px;
+  box-sizing: border-box;
+  background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.05), transparent 20%),
+              linear-gradient(90deg, rgba(255,255,255,0.05), transparent 60%);
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto;
+}
+
+.area canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*image-rendering: pixelated;*/
+}
+
+.encabezado{
+  width: 1700px;
+  margin: 0 auto; /* centra el encabezado en la página */
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;;
+}
+
+.encabezado h1 {
+  color: White;
+  margin: 15px; 
+  font-size: 2rem;
+}
+
+.encabezado div  {
+  width: 400px;
+  height: 60px; 
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.7);
+  border-radius: 12px;
+  box-sizing: border-box;
+  background:linear-gradient(45deg,#da9d00,#b18e50) ;
+
+  margin: 20px;
+}
+
+.Vidas canvas {
+  display: flex;
+  align-items: center;
+}
+
